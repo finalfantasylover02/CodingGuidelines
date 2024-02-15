@@ -8,12 +8,8 @@ function subtract(x, y) {
   result = x - y;
 }
 
-function accumulate(x) {
-    result += x;
-}
-
-add(5, 10);
+const result = add(5, 10);
 console.log(result);
-accumulate(6);
-subtract(6, 12);
-console.log(result);
+const accumulate= add(result,6);
+console.log(subtract(accumulate,12));
+// switched away from global vars
